@@ -1,0 +1,33 @@
+.text-montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.shadow-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease-in-out; 
+}
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+.is-sticky {
+    background-color: #011D4A;
+    transition: background-color 0.3s ease;
+  }
+  .white-text {
+    color: white;
+}
+.no-border-card {
+    border: none;
+}
+.img-container {
+    display: inline-block;
+    width: 200px; 
+    height: auto; 
+    margin-right: 10px; 
+    vertical-align: middle; 
+}
+body {
+    overflow: visible;
+}
+

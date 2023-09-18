@@ -1,0 +1,85 @@
+/* Styling untuk modal content */
+.modal-content {
+    background-color: #fff; /* Warna latar belakang */
+    border-radius: 10px; /* Sudut bulat pada modal */
+  }
+  
+  /* Styling untuk modal title */
+  .modal-title {
+    color: #333; /* Warna teks judul */
+  }
+  
+  /* Styling untuk tombol Close */
+  .close {
+    color: #333; /* Warna ikon Close */
+  }
+  
+  /* Styling untuk form group (kolom input) */
+  .form-group {
+    margin-bottom: 15px; /* Jarak antara setiap form group */
+  }
+  
+  /* Styling untuk teks label pada form group */
+  .form-group label {
+    font-weight: bold; /* Tebalkan teks label */
+    color: #333; /* Warna teks label */
+  }
+  
+  /* Styling untuk input dan textarea pada form group */
+  .form-control {
+    border: 1px solid #ccc; /* Garis tepi input */
+    border-radius: 5px; /* Sudut bulat pada input */
+    padding: 10px; /* Ruang dalam input */
+  }
+  
+  /* Styling untuk tombol "Close" pada footer modal */
+  .modal-footer .btn-secondary {
+    background-color: #ccc; /* Warna latar belakang tombol */
+    color: #fff; /* Warna teks tombol */
+    border: none; /* Hilangkan garis tepi tombol */
+    border-radius: 5px; /* Sudut bulat pada tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang saat hover */
+  }
+  
+  /* Hover efek pada tombol "Close" */
+  .modal-footer .btn-secondary:hover {
+    background-color: #999; /* Warna latar belakang tombol saat hover */
+    cursor: pointer; /* Pointer berubah saat dihover */
+  }
+  /* Styling untuk modal content mode landscape */
+.modal-content.landscape {
+    width: 80%; /* Lebar modal */
+    max-width: 100%; /* Lebar maksimum modal */
+    height: 80vh; /* Tinggi modal (disesuaikan dengan kebutuhan) */
+    max-height: 80vh; /* Tinggi maksimum modal (disesuaikan dengan kebutuhan) */
+    margin: auto; /* Posisi tengah modal */
+  }
+  
+  /* Styling untuk modal body dalam mode landscape */
+  .modal-body.landscape {
+    height: calc(100% - 100px); /* Tinggi body modal (disesuaikan dengan kebutuhan) */
+    overflow-y: auto; /* Munculkan scrollbar jika konten terlalu panjang */
+  }
+  
+  /* Styling untuk tombol "Close" dalam mode landscape */
+  .close.landscape {
+    font-size: 2rem; /* Ukuran font ikon Close */
+  }
+  
+  /* Styling untuk footer modal dalam mode landscape */
+  .modal-footer.landscape {
+    display: flex;
+    justify-content: flex-end; /* Posisi tombol di kanan bawah */
+  }
+  
+  /* Styling untuk tombol di dalam footer modal */
+  .modal-footer.landscape .btn {
+    margin-left: 10px; /* Jarak antara tombol */
+  }
+  
+  /* Styling tambahan */
+  body.modal-open {
+    overflow: hidden; /* Sembunyikan scroll tubuh saat modal muncul */
+  }
+  

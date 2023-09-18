@@ -1,0 +1,115 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="live-preview">
+                <form action="javascript:void(0);">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="functionLocation" class="form-label">Function Location</label>
+                            <input type="text" class="form-control" [(ngModel)]="newActivityGroup.function_location"
+                                name="function_location" id="functionLocation">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="ForminputDate" class="form-label">Date</label>
+                            <input type="date" class="form-control" [(ngModel)]="newActivityGroup.date" name="date"
+                                id="ForminputDate">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="picInput" class="form-label">PIC</label>
+                            <input type="tel" class="form-control" [(ngModel)]="newActivityGroup.pic" name="pic"
+                                id="picInput">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="equipment" class="form-label">Equipment</label>
+                            <input type="text" class="form-control" [(ngModel)]="newActivityGroup.equipment"
+                                name="equipment" id="equipment">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-sm float-end" style="margin-top: 10px;"
+                                    (click)="onClick()">+ Add</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <table class="table table-bordered" id="activityInput">
+                                <thead>
+                                    <tr>
+                                        <th>Operation Task</th>
+                                        <th>QTY</th>
+                                        <th>Status Part</th>
+                                        <th>Category</th>
+                                        <th>Work Center</th>
+                                        <th>Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                        <td><input type="text" class="form-control" name="nim1"></td>
+                                        <td><input type="text" class="form-control" name="jurusan1"></td>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                        <td><input type="text" class="form-control" name="nim1"></td>
+                                        <td><input type="text" class="form-control" name="jurusan1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama2"></td>
+                                        <td><input type="text" class="form-control" name="nim2"></td>
+                                        <td><input type="text" class="form-control" name="jurusan2"></td>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                        <td><input type="text" class="form-control" name="nim1"></td>
+                                        <td><input type="text" class="form-control" name="jurusan1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                        <td><input type="text" class="form-control" name="nim1"></td>
+                                        <td><input type="text" class="form-control" name="jurusan1"></td>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                        <td><input type="text" class="form-control" name="nim1"></td>
+                                        <td><input type="text" class="form-control" name="jurusan1"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-sm float-end" style="margin-top: -5px;"
+                                    >+ Add</button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <table class="table table-bordered" id="materialInput">
+                                <thead>
+                                    <tr>
+                                        <th>Description Material</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" class="form-control" name="nama1"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-md-12">
+                                <button class="btn btn-primary btn-sm float-end" style="margin-top: -5px;"
+                                   >+ Add</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-success me-2"
+                                    style="margin-right: 8px;">Submit</button>
+                                <button (click)="forBack()" class="btn btn-danger me-2">Back</button>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

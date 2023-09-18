@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="flex-shrink-0">
+                    <button class="btn btn-primary btn-sm" style="margin-bottom: 30px; margin-right: 10px;"
+                        (click)="addData()">Add Data</button>
+                </div>
+                <div class="live-preview">
+                    <div class="table-responsive table-card">
+                        <table class="table align-middle table-nowrap mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th *ngFor="let col of tableColumns" scope="col">{{ col }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- You can use *ngFor to loop through your activityData and generate table rows dynamically -->
+                                <tr *ngFor="let item of activityData; let i = index">
+                                    <td>{{ i + 1 }}</td> <!-- Use index to display the row number -->
+                                    <td>{{ item.function_location }}</td> <!-- Use the correct property names -->
+                                    <td>{{ item.operation_task }}</td>
+                                    <td>{{ item.description_material }}</td>
+                                    <td>{{ item.date | date:'dd MMMM yyyy'}}</td>
+                                    <td>
+                                        <div class="dropdown item" ngbDropdown>
+                                            <a href="javascript:void(0);" class="arrow-none" role="button"
+                                                id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                ngbDropdownToggle>
+                                                <i class="ri-more-2-fill"></i>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="dropdownMenuLink1" ngbDropdownMenu>
+                                                <li><a class="dropdown-item" (click)="openPopup()">Show All</a></li>
+                                                <li><a class="dropdown-item">Edit</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="d-none code-view">
+                    <div class="language-markup" style="height: 275px;">
+                        <div>&lt;div class=&quot;table-responsive table-card&quot;&gt;</div>
+                    </div>
+                </div><!-- end card-body -->
+            </div><!-- end card -->
+        </div><!-- end col -->
+    </div><!-- end row -->
+</div>

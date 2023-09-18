@@ -1,0 +1,104 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+            <div class="flex-shrink-0">
+                <button class="btn btn-primary btn-sm" style="margin-bottom: 15px; margin-right: 10px;"
+                    (click)="addData()">
+                    Add Data</button>
+            </div>
+          <div class="table-responsive">
+            <table class="table table-gridjs">
+              <thead>
+                <tr>
+                  <th data-sort="id">Name</th>
+                  <th data-sort="name">Subtask</th>
+                  <th data-sort="email">Owner</th>
+                  <th data-sort="email">Due Date</th>
+                  <th data-sort="email">Timeline</th>
+                  <th data-sort="position">Status</th>
+                  <th data-sort="company">Priority</th>
+                  <th data-sort="country">Notes</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>
+                        Chlorine Meter
+                    </td>
+                    <td>
+                        Create Proposal Chlorine Meter <br>
+                        Create form Perubahan <br>
+                        Create Design Qualification <br>
+                        Create installation Qualification <br>
+                        Installation Unit <br>
+                        Validation Unit <br>
+                        Application
+                    </td>
+                    <td>
+                        Septa Wicaksana
+                    </td>
+                    <td>
+                        25-12-2023
+                    </td>
+                    <td>
+                        07-08-2023 - 25-08-2023<br>
+                        07-08-2023 - 08-09-2023<br>
+                        11-09-2023 - 22-09-2023<br>
+                        18-09-2023 - 25-09-2023<br>
+                        04-12-2023 - 15-12-2023<br>
+                        18-12-2023 - 22-12-2023<br>
+                        26-12-2023 - 29-12-2023
+                    </td>
+                    <td>
+                        Done <br>
+                        Working on it <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </td>
+                    <td>
+                        high
+                    </td>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                      <div class="dropdown" ngbDropdown>
+                          <a href="javascript:void(0);" class="arrow-none" role="button"
+                              id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"
+                              ngbDropdownToggle>
+                              <i class="ri-more-2-fill"></i>
+                          </a>
+
+                          <ul class="dropdown-menu dropdown-menu-end"
+                              aria-labelledby="dropdownMenuLink1" ngbDropdownMenu>
+                              <li><a class="dropdown-item">Edit</a></li>
+                              <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                          </ul>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row justify-content-md-between align-items-md-center">
+            <div class="col col-sm-6">
+              <div class="dataTables_info mb-2" id="tickets-table_info" role="status" aria-live="polite">
+                
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="col col-sm-6">
+            </div>
+            <!-- End Pagination -->
+          </div>
+        </div><!-- end card-body -->
+      </div><!-- end card -->
+    </div>
+    <!-- end col -->
+  </div>
+  <!-- end row -->

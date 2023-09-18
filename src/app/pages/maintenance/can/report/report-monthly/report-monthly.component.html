@@ -1,0 +1,87 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="flex-shrink-0">
+                    <button class="btn btn-primary btn-sm" style="margin-bottom: 15px; margin-right: 10px;"
+                        (click)="addData()">
+                        Add Data
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-gridjs" style="width: 2000px;">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Issue</th>
+                                <th scope="col">Area</th>
+                                <th scope="col">Machine</th>
+                                <th scope="col">Name Plate/Speck</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Report by</th>
+                                <th scope="col">Photo Before</th>
+                                <th scope="col">PIC</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Verification</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Remark</th>
+                                <th scope="col">Evidence</th>
+                                <th scope="col" style="width: 150px;">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>8 September 2023</td>
+                                <td>Oli Habis</td>
+                                <td>Mesin</td>
+                                <td>Radiator</td>
+                                <td>-</td>
+                                <td>Hard</td>
+                                <td>Rohman</td>
+                                <td>
+                                    <img src="../../../../../../../assets/images/machine.jpeg" style="width: 100px; height: auto;">
+                                </td>
+                                <td>roro & riri</td>
+                                <td>Oli habis karena bocor</td>
+                                <td>1</td>
+                                <td>Done</td>
+                                <td>10 September 2023</td>
+                                <td>Tambal kebocoran</td>
+                                <td>
+                                    <img src="../../../../../../../assets/images/machine.jpeg" style="width: 100px; height: auto;">
+                                </td>
+                                <td>
+                                    <div class="dropdown" ngbDropdown>
+                                        <a href="javascript:void(0);" class="arrow-none" role="button"
+                                            id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            ngbDropdownToggle>
+                                            <i class="ri-more-2-fill"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuLink1" ngbDropdownMenu>
+                                            <li><a class="dropdown-item">Edit</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row justify-content-md-between align-items-md-center">
+                    <div class="col col-sm-6">
+                        <div class="dataTables_info mb-2" id="tickets-table_info" role="status" aria-live="polite">
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

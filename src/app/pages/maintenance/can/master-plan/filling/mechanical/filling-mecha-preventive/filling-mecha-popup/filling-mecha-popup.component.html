@@ -1,0 +1,101 @@
+<!-- Di dalam HTML Anda -->
+<div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail Data</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>          
+      </div>
+      <div class="modal-body">
+        <!-- Kolom-kolom data -->
+        <div class="form-group">
+          <label for="functionLocation">Function Location</label>
+          <input type="text" class="form-control" id="functionLocation" value="PM-Rinser" readonly>
+        </div>
+        <div class="form-group">
+          <label for="equipment">Equipment (IH01)</label>
+          <input type="text" class="form-control" id="equipment" value="Rinser" readonly>
+        </div>
+        <div class="form-group">
+          <label for="operationTask">Operation Task</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+3M Replacement Filter Cartridge 1 & 2
+1Y Replacement macseal pompa rinser
+Replace air cylinder stop gate
+        </textarea>
+        </div>
+        <div class="form-group">
+          <label for="descriptionMaterial">Description Material</label>
+          <textarea class="form-control" id="descriptionMaterial" rows="4" readonly>
+Filter, Polynet Nt30T30050Ng Song Cuno 
+Seal, Mechanical, 96525458 Grundfoss 
+Plate Cylinder Mdub32-10Dz Smc
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="text" class="form-control" id="date" value="1 Agustus 2023" readonly>
+        </div>
+        <div class="form-group">
+          <label for="pic">PIC</label>
+          <input type="text" class="form-control" id="pic" value="Mahendri dan Ari" readonly>
+        </div>
+        <div class="form-group">
+          <label for="qty">QTY</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+12
+2
+1
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="statusPart">Status Part</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+MRP
+MRP
+On Demand
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="kategory">Category</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+Mechanical
+Mechanical
+Mechanical
+           </textarea>
+        </div>
+        <div class="form-group">
+          <label for="workCenter">Work Center</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+MTC
+MTC
+MTC
+            </textarea>
+        </div>
+        <div class="form-group">
+          <label for="skillCategory">Skill Category</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+general
+general
+general
+          </textarea>
+        </div>
+        <div class="form-group">
+          <label for="duration">Duration (Hour)</label>
+          <textarea class="form-control" id="operationTask" rows="4" readonly>
+3
+3
+3
+          </textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="approveData()">Approve</button>
+        <button type="button" class="btn btn-danger" (click)="unapproveData()">Unapprove</button>
+      </div>
+    </div>
+  </div>
+</div>

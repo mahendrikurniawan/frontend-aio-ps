@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="flex-shrink-0">
+                    <button class="btn btn-primary btn-sm" style="margin-bottom: 15px; margin-right: 10px;"
+                        (click)="addData()">
+                        Add Data
+                    </button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-gridjs" style="table-layout: auto;">
+                        <thead>
+                            <tr>
+                                <th scope="col">Picture</th>
+                                <th scope="col">No</th>
+                                <th scope="col">Task Activity</th>
+                                <th scope="col">Period</th>
+                                <th scope="col">Standard</th>
+                                <th scope="col">PIC</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Remark</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../../../../../../../assets/images/machine.jpeg" style="width: 100px; height: auto;">
+                                </td>
+                                <td>1 <br>
+                                    2 <br>
+                                    3 <br>
+                                    4 <br>
+                                    5 
+                                </td>
+                                <td>
+                                    Cleaning hopper cap <br>
+                                    Cleaning sorter cap <br>
+                                    Cleaning ascending conveyor <br>
+                                    Cleaning filter supply steam <br>
+                                    Cleaning belt horizontal cap
+                                </td>
+                                <td>
+                                    W <br>
+                                    W <br>
+                                    W <br>
+                                    M <br>
+                                    M 
+                                </td>
+                                <td>
+                                    clean <br>
+                                    clean <br>
+                                    clean <br>
+                                    clean <br>
+                                    clean 
+                                </td>
+                                <td>
+                                    gtw <br>
+                                    gtw <br>
+                                    gtw <br>
+                                    gtw <br>
+                                    gtw 
+                                </td>
+                                <td>
+                                    1 September 2023 <br>
+                                    1 September 2023 <br>
+                                    1 September 2023 <br>
+                                    1 September 2023 <br>
+                                    1 September 2023 
+                                </td>
+                                <td></td>
+                                <td>
+                                    <div class="dropdown" ngbDropdown>
+                                        <a href="javascript:void(0);" class="arrow-none" role="button"
+                                            id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            ngbDropdownToggle>
+                                            <i class="ri-more-2-fill"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuLink1" ngbDropdownMenu>
+                                            <li><a class="dropdown-item">Edit</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row justify-content-md-between align-items-md-center">
+                    <div class="col col-sm-6">
+                        <div class="dataTables_info mb-2" id="tickets-table_info" role="status" aria-live="polite">
+                        </div>
+                    </div>
+                    <div class="col col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
